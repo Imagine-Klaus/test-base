@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    /* 
+            *typeof 取值为object的 除了null  其它都不等 
+            */ 
+            function compareobj(A,B){ 
+            	//1. 判断数组类型
+                if(A instanceof Array){ 
+                    if(!(B instanceof Array)){ 
+                        return false;     //如果B不是数组 退出
+                    } 
+                    //比较两者的长度
+                    var aLen = A.length, 
+                        bLen = B.length;
+
+                    //如果二者的长度不等, 退出     
+                    if(aLen != bLen){ 
+                        return false; 
+                    } 
+
+                    //假设是相等的  num = 0
+                    var isEqual = true,num = 0; 
+
+                    //遍历A数组
+                    for(var i = 0;i < aLen;i++){ 
+                    	
+                        if(A[i]!=B[i] && typeof A[i]=='object' && typeof B[i]=='object'){ 
+                          isEqual = arguments.callee.apply(null,[A[i],B[i]]); 
+                          //isEqual = compareobj(A[i],B[i]); 
+                        }else{ 
+                          isEqual = A[i]===B[i]; 
+                        } 
+                        if(isEqual){ 
+                            num++; 
+                        } 
+                    } 
+                    if(num != aLen){ 
+                        return false; 
+                    }else{ 
+                        return true; 
+                    } 
+                }
+            	//2. 判断日期类型
+                
+                else if(A instanceof Date){ 
+                    if(!(B instanceof Date)){ 
+                        return false; 
+                    }else{ 
+                        return A.getTime() == B.getTime(); 
+                    } 
+                }
+                //3. 判断对象类型
+                else if(A instanceof Object){ 
+                    if((B instanceof Array) || (B instanceof Date) || !(B instanceof Object)){ 
+                        return false; 
+                    }else{ 
+                       var aLen=bLen=0; 
+                       for(var i in A){ 
+                            aLen++; 
+                       } 
+                       for(var i in B){ 
+                            bLen++; 
+                       } 
+                       if(aLen != bLen){ 
+                            return false; 
+                       } 
+                       var isEqual = true,num = 0; 
+                       for(var i in A){ 
+                         if(typeof A[i] == 'object' && typeof B[i] == 'object' && A[i]!=B[i]){ 
+                            isEqual = arguments.callee.apply(null,[A[i],B[i]]); 
+                           // isEqual = compareobj(A[i],B[i]); 
+                         }else{ 
+                            isEqual = A[i]===B[i]; 
+                         } 
+                         if(isEqual){ 
+                            num++; 
+                         } 
+                       } 
+                       if(num != aLen){ 
+                            return false; 
+                       }else{ 
+                            return true; 
+                       } 
+                    } 
+                }else{ 
+                    if(B instanceof Object){ 
+                        return false; 
+                    }else{ 
+                        return A===B; 
+                    } 
+                } 
+            }
+    </script>
+</body>
+
+</html>

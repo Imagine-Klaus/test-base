@@ -1,0 +1,223 @@
+<!-- <template>
+    <div class="contaniner">
+        <ul>
+            <li>
+                <span>姓名:</span>
+                <input type="text" v-model="formParams.values.name" placeholder="请输入您的姓名" @blur="validate( 'name' )">
+                <p class="error" v-show="!formParams.validates.name">{{formParams.error.name}}</p>
+            </li>
+            <li>
+                <span>姓名:</span>
+                <input type="text" v-model="formParams.values.age" placeholder="请输入您的年龄" @blur="validate( 'age' )">
+                <p class="error" v-show="!formParams.validates.age">{{formParams.error.age}}</p>
+            </li>
+            <li>
+                <button type="submit" @click="subForm">提交表单</button>
+            </li>
+        </ul>            
+    </div>
+</template>
+<script type="text/javascript">
+    data(){
+        return {
+            formParams:{
+                isFormValid:false,
+                rules:{
+                    name: [{required: true, message: "这是必填项"},{maxlength:10,message:'不能超过10位数'}],
+                    age: [{required: true, message: '这个是必填项'}]   
+                },
+                errors:{ //用于显示相应的错误信息
+                    name: '',
+                    age: ''
+                },
+                values: {
+                    name: '',
+                    age: ''
+                },
+                validates: {
+                    name:false,
+                    age:false
+                }
+            }
+        }
+    },
+    methods:{
+        validate( key ) {
+            var rules = this.formParams.rules[key]
+
+            var value = this.formParams.value[key]
+            var isKeyValid = true;
+            rules.map((singleRule,index)=> {
+                if(singleRule.required && !value) {
+                    //打开显示错误信息的标签
+                    this.formParams.validates[key] = false;
+                    this.formParams.errors = rules.message;
+                    isKeyValid = false;
+                    return false;
+                }
+                if(> singleRule.maxlength && value.length > singleRule.maxlength ) {
+                    this.formParams.validates[key] = false;
+                    this.formParams.errors = rules.message;
+                    isKeyValid = false;
+                    return false;
+                }
+            })
+            if(isKeyValid) {
+                //1.清空错误数据
+                    this.formParams.validates [key] = true
+                    this.formParams.error[key] = ''
+                //2.关闭错误数据标签
+            }else {
+                    this.formParams.validates[key] = false
+            }   
+
+        }
+    }
+</script>
+
+<template>
+    <div class="container">
+        <ul class="form">
+            <li>
+                <span>姓名:</span>
+                <input type="text" v-model="formParam.values.name" placeholder="请输入姓名">
+                <p class="error" v-show="!formParam.validate.name" >{{formParam.errors.name}}</p>
+            </li>
+            <li>
+                <span>年龄:</span>
+                <input type="text" v-model="formParam.values.age" placeholder="请输入年龄">
+                <p class="error" v-show="!formParam.validate.age" >{{formParam.errors.age}}</p>
+            </li>
+            <li>
+                <button @click="submitForm">提交</button>
+            </li>
+        </ul>
+    </div>
+</template>
+<script type="text/javascript">
+    export default {
+        data(){
+            return {
+                formVali: true,//假设验证通过
+                formParam: {
+                    rules:{
+                        name:[{required: true, message: '输入不能为空'},{maxlength:10, message: '不能超过十个字符'}],
+                        age:[{required: true, message: '输入不能为空'}]
+                    },
+                    values: {
+                        name: '',
+                        age: ''
+                    },
+                    error: {
+                        name: '',
+                        age: ''
+                    },
+                    validate: {
+                        name: false,
+                        age: false
+                    }
+                }
+            }
+        },
+        methods:{
+            validates(key) {
+                let rules = this.formParam.rules[key];
+                let value = this.formParam.values[key]
+
+                let keyValid = true
+                rules.map((rule, index) => {
+                    if(rule.required && !value) {
+                        this.formParams.validate[key] = true;
+                        this.formParams.error[key] = rule.message
+                        keyValid = false;
+                        return false;
+                    }
+                    if(rule.maxlength && value.length>rule.maxlength) {
+                        this.formParams.validate[key] = true;
+                        this.formParams.error[key] = rule.message
+                        keyValid = false;
+                        return false;   
+                    }
+                })
+                if(keyValid) {
+                    this.formParams.validates[key] = true;
+                    this.formParams.error = ''
+                }
+            },
+            submitForm(){
+                for(var k in this.formParams.validates) {
+                    if(!this.formParams.validates[k]) {
+                        this.formVali= false;
+                        return false;
+                    }   
+                }
+                if(formVali) {
+                        this.$http.post(url, formData).then(res=> {
+                            
+                        })
+                }
+        }
+    }
+</script> -->
+
+<template>
+    <div>
+        <ul>
+            <li>
+                <span>姓名</span>
+                <input type="text" v-model="formParam.values.name">
+                <p class="error" v-show="!formParam.validates.name">{{formParam.error.name}}</p>
+            </li>
+            <li>
+                <span>姓名</span>
+                <input type="text" v-model="formParam.values.name">
+                <p class="error" v-show="!formParam.validates.name">{{formParam.error.name}}</p>
+            </li>
+
+            <button type="submit" @click="submit">提交</button>
+        </ul>
+    </div>
+</template>
+<script type="text/javascript">
+    export default {
+        data(){
+            return {
+                formValid: true;
+                formParams: {
+                    rules:{
+                        name:[{required:true, message:'这是必填项'},{maxLength:10,message:'不能超过10个字符'}],
+                        age:[{required:true, message:'这是必填项'}]
+                    },
+                    vaules:{
+                        name:'',
+                        age:''
+                    },
+                    error:{
+                        name:'',
+                        age:''
+                    },
+                    validata:{
+                        name:false,
+                        age:false
+                    }
+                }       
+            }
+        },
+        methods:{
+            validates(key){
+                let iskeyValid = true;
+                let rules = this.formParams.rules[key],
+                let value = this.formParams.values[key]
+
+                rules.map((rule, index) => {
+                    if(rule.required && !value) {
+                        this.formParams.validates[key] = true;
+                        this.formParams.errors[key] = this.rules[key].message
+                        iskeyValid = false;
+                        return false;
+                    }
+                })
+            }
+        }
+    }
+</script>

@@ -1,0 +1,924 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第四节-CSS3 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="javascript基础整理.html" />
+    
+    
+    <link rel="prev" href="CSS.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一章：前端三件套基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="HTML.html">
+            
+                <a href="HTML.html">
+            
+                    
+                    第一节-HTML基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="HTML5.html">
+            
+                <a href="HTML5.html">
+            
+                    
+                    第二节-HTML5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="CSS.html">
+            
+                <a href="CSS.html">
+            
+                    
+                    第三节-CSS基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="CSS3.html">
+            
+                <a href="CSS3.html">
+            
+                    
+                    第四节-CSS3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="javascript基础整理.html">
+            
+                <a href="javascript基础整理.html">
+            
+                    
+                    第五节-Javascript基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第二章：DOM与BOM
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Javascript-advanced-notes/DOM.html">
+            
+                <a href="../Javascript-advanced-notes/DOM.html">
+            
+                    
+                    第一节-DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Javascript-advanced-notes/BOM.html">
+            
+                <a href="../Javascript-advanced-notes/BOM.html">
+            
+                    
+                    第二节-BOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第三章：Javascript之面向对象编程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Javascript-advanced-notes/面向对象编程.html">
+            
+                <a href="../Javascript-advanced-notes/面向对象编程.html">
+            
+                    
+                    第一节-OOP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" >
+            
+                <span>
+            
+                    
+                    细节
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第四节-CSS3</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="css3">CSS3</h1>
+<h2 id="1css3&#x7B80;&#x4ECB;">1.CSS3&#x7B80;&#x4ECB;</h2>
+<p>CSS3&#x662F;CSS2&#x7684;&#x5347;&#x7EA7;&#x7248;&#x672C;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x5F88;&#x591A;&#x597D;&#x7528;&#x7684;&#x9009;&#x62E9;&#x5668;&#x4EE5;&#x53CA;&#x65B0;&#x7684;&#x6837;&#x5F0F;&#x5C5E;&#x6027;</p>
+<p>CSS3&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x5176;&#x4E2D;&#x5E38;&#x7528;&#x7684;&#x5C5E;&#x6027; &#x517C;&#x5BB9;&#x6027;&#x8F83;&#x597D;</p>
+<p>&#x800C;&#x4E14;&#x4E5F;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x6DFB;&#x52A0;&#x6D4F;&#x89C8;&#x5668;&#x524D;&#x7F00;&#x7684;&#x65B9;&#x5F0F; &#x89E3;&#x51B3;&#x517C;&#x5BB9;&#x6027;&#x95EE;&#x9898;</p>
+<ul>
+<li>-webkit- : Chrome , Safari</li>
+<li>-o- : Opera</li>
+<li>-moz- : Firefox</li>
+<li>-ms- : IE</li>
+</ul>
+<h2 id="2css3&#x9009;&#x62E9;&#x5668;">2.CSS3&#x9009;&#x62E9;&#x5668;</h2>
+<h3 id="21-&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;">2.1 &#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;</h3>
+<ul>
+<li>[attribute]</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x9009;&#x62E9;&#x6240;&#x6709;&#x5E26;&#x6709;target&#x5C5E;&#x6027;&#x7684; &lt;a&gt;&#x5143;&#x7D20; */</span>
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-attr">[target]</span> {
+    <span class="hljs-attribute">background-color</span>: yellow;
+}
+</code></pre>
+<ul>
+<li>[attribute=value]</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x9009;&#x62E9;&#x6240;&#x6709;&#x4F7F;&#x7528;target=&quot;_blank&quot;&#x7684;a&#x5143;&#x7D20; */</span>
+<span class="hljs-selector-tag">a</span><span class="hljs-selector-attr">[target=_blank]</span> {
+    <span class="hljs-attribute">background-color</span>: yellow;
+}
+</code></pre>
+<ul>
+<li>[attribute~=value]</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x9009;&#x62E9;&#x6807;&#x9898;&#x5C5E;&#x6027;&#x5305;&#x542B;&#x5355;&#x8BCD;&quot;flower&quot;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20; */</span>
+<span class="hljs-selector-attr">[title~=flower]</span> {
+    <span class="hljs-attribute">background-color</span>: yellow;
+}
+</code></pre>
+<ul>
+<li>[attribute^=value]</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x8BBE;&#x7F6E;class&#x5C5E;&#x6027;&#x503C;&#x4EE5;&quot;test&quot;&#x5F00;&#x5934;&#x7684;&#x6240;&#x6709;div&#x5143;&#x7D20;&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272; */</span>
+<span class="hljs-selector-tag">div</span><span class="hljs-selector-attr">[class^=&quot;test&quot;]</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#ffff00</span>;
+}
+</code></pre>
+<ul>
+<li>[attribute$=value]</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x8BBE;&#x7F6E;class&#x5C5E;&#x6027;&#x503C;&#x4EE5;&quot;test&quot;&#x7ED3;&#x5C3E;&#x7684;&#x6240;&#x6709;div&#x5143;&#x7D20;&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272; */</span>
+<span class="hljs-selector-tag">div</span><span class="hljs-selector-attr">[class$=&quot;test&quot;]</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#ffff00</span>;
+}
+</code></pre>
+<ul>
+<li>[attribute*=value]</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x8BBE;&#x7F6E;class&#x5C5E;&#x6027;&#x503C;&#x5305;&#x542B;&quot;test&quot;&#x7684;&#x6240;&#x6709;div&#x5143;&#x7D20;&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272; */</span>
+<span class="hljs-selector-tag">div</span><span class="hljs-selector-attr">[class*=&quot;test&quot;]</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#ffff00</span>;
+}
+</code></pre>
+<h3 id="22-&#x4F2A;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;">2.2 &#x4F2A;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;</h3>
+<ul>
+<li>:first-child</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x5339;&#x914D; &lt;p&gt; &#x7684;&#x7236;&#x5143;&#x7D20;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&lt;p&gt;&#x5143;&#x7D20; */</span>
+<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:first-child</span> {
+    <span class="hljs-attribute">background-color</span>: yellow;
+}
+</code></pre>
+<ul>
+<li>:last-child</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x6307;&#x5B9A;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x6700;&#x540E;&#x4E00;&#x4E2A;p&#x5143;&#x7D20;&#x7684;&#x80CC;&#x666F;&#x8272; */</span>
+<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:last-child</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#ff0000</span>;
+}
+</code></pre>
+<ul>
+<li>:nth-child(n) &#x5339;&#x914D;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x7B2C;n&#x4E2A;&#x5B50;&#x5143;&#x7D20;&#x3002;n&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x516C;&#x5F0F;</li>
+</ul>
+<pre><code class="lang-css"><span class="hljs-comment">/* &#x6307;&#x5B9A;&#x6BCF;&#x4E2A;p&#x5143;&#x7D20;&#x5339;&#x914D;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x7B2C;2&#x4E2A;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x80CC;&#x666F;&#x8272; */</span>
+<span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:nth-child(2)</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-number">#ff0000</span>;
+}
+</code></pre>
+<h3 id="23-&#x4F2A;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;">2.3 &#x4F2A;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;</h3>
+<ul>
+<li>::selection &#x5339;&#x914D;&#x5143;&#x7D20;&#x4E2D;&#x88AB;&#x7528;&#x6237;&#x9009;&#x4E2D;&#x6216;&#x5904;&#x4E8E;&#x9AD8;&#x4EAE;&#x72B6;&#x6001;&#x7684;&#x90E8;&#x5206;</li>
+</ul>
+<h2 id="3&#x9634;&#x5F71;">3.&#x9634;&#x5F71;</h2>
+<h3 id="31-box-shadow-&#x76D2;&#x5B50;&#x9634;&#x5F71;">3.1 box-shadow &#x76D2;&#x5B50;&#x9634;&#x5F71;</h3>
+<pre><code class="lang-css"><span class="hljs-selector-tag">box-shadow</span>: <span class="hljs-selector-tag">h-shadow</span> <span class="hljs-selector-tag">v-shadow</span> <span class="hljs-selector-tag">blur</span> <span class="hljs-selector-tag">spread</span> <span class="hljs-selector-tag">color</span> <span class="hljs-selector-tag">inset</span>;
+
+<span class="hljs-comment">/*
+    h-shadow &#x5FC5;&#x9700;&#x7684;&#x3002;&#x6C34;&#x5E73;&#x9634;&#x5F71;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5141;&#x8BB8;&#x8D1F;&#x503C;
+    v-shadow &#x5FC5;&#x9700;&#x7684;&#x3002;&#x5782;&#x76F4;&#x9634;&#x5F71;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5141;&#x8BB8;&#x8D1F;&#x503C;
+    blur &#x53EF;&#x9009;&#x3002;&#x6A21;&#x7CCA;&#x8DDD;&#x79BB;
+    spread &#x53EF;&#x9009;&#x3002;&#x9634;&#x5F71;&#x7684;&#x5927;&#x5C0F;
+    color &#x53EF;&#x9009;&#x3002;&#x9634;&#x5F71;&#x7684;&#x989C;&#x8272;
+    inset &#x53EF;&#x9009;&#x3002;&#x4ECE;&#x5916;&#x5C42;&#x7684;&#x9634;&#x5F71;&#xFF08;&#x5F00;&#x59CB;&#x65F6;&#xFF09;&#x6539;&#x53D8;&#x9634;&#x5F71;&#x5185;&#x4FA7;&#x9634;&#x5F71;
+*/</span>
+</code></pre>
+<h3 id="32-text-shadow-&#x6587;&#x5B57;&#x9634;&#x5F71;">3.2 text-shadow &#x6587;&#x5B57;&#x9634;&#x5F71;</h3>
+<pre><code class="lang-css"><span class="hljs-selector-tag">text-shadow</span>: <span class="hljs-selector-tag">h-shadow</span> <span class="hljs-selector-tag">v-shadow</span> <span class="hljs-selector-tag">blur</span> <span class="hljs-selector-tag">color</span>;
+
+<span class="hljs-comment">/*
+    h-shadow &#x5FC5;&#x9700;&#x7684;&#x3002;&#x6C34;&#x5E73;&#x9634;&#x5F71;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5141;&#x8BB8;&#x8D1F;&#x503C;
+    v-shadow &#x5FC5;&#x9700;&#x7684;&#x3002;&#x5782;&#x76F4;&#x9634;&#x5F71;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x5141;&#x8BB8;&#x8D1F;&#x503C;
+    blur &#x53EF;&#x9009;&#x3002;&#x6A21;&#x7CCA;&#x8DDD;&#x79BB;
+    color &#x53EF;&#x9009;&#x3002;&#x9634;&#x5F71;&#x7684;&#x989C;&#x8272;
+*/</span>
+</code></pre>
+<h2 id="4box&#x76D2;&#x6A21;&#x578B;">4.box&#x76D2;&#x6A21;&#x578B;</h2>
+<p>box-sizing&#x76D2;&#x6A21;&#x578B;</p>
+<ul>
+<li><p>border-box &#x4F18;&#x5148;&#x4FDD;&#x8BC1;&#x81EA;&#x5DF1;&#x6240;&#x5360;&#x533A;&#x57DF;&#x7684;&#x5927;&#x5C0F;,&#x5BF9;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x538B;&#x7F29;</p>
+<p>  &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E86;width&#x548C;height&#xFF0C;&#x6B64;&#x65F6;&#x5982;&#x679C;&#x8BBE;&#x7F6E;border&#x548C;padding&#xFF0C;&#x4E0D;&#x4F1A;&#x5411;&#x5916;&#x6491;&#x5927;&#x76D2;&#x5B50;&#xFF0C;&#x800C;&#x662F;&#x5411;&#x5185;&#x538B;&#x7F29;&#x5185;&#x5BB9;&#x5927;&#x5C0F;</p>
+</li>
+<li><p>content-box &#x4FDD;&#x8BC1;&#x5185;&#x5BB9;&#x5927;&#x5C0F;&#xFF0C;&#x5BF9;&#x76D2;&#x5B50;&#x8FDB;&#x884C;&#x538B;&#x7F29;</p>
+<p>  &#x4E0D;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;content-box</p>
+</li>
+</ul>
+<h2 id="5&#x80CC;&#x666F;">5.&#x80CC;&#x666F;</h2>
+<h3 id="51-background-size">5.1 background-size</h3>
+<p>&#x5C5E;&#x6027;&#x503C;&#xFF1A;</p>
+<ul>
+<li><p>cover &#x6B64;&#x65F6;&#x4F1A;&#x4FDD;&#x6301;&#x56FE;&#x50CF;&#x7684;&#x7EB5;&#x6A2A;&#x6BD4;&#x5E76;&#x5C06;&#x56FE;&#x50CF;&#x7F29;&#x653E;&#x6210;&#x5C06;&#x5B8C;&#x5168;&#x8986;&#x76D6;&#x80CC;&#x666F;&#x5B9A;&#x4F4D;&#x533A;&#x57DF;&#x7684;&#x6700;&#x5C0F;&#x5927;&#x5C0F;</p>
+</li>
+<li><p>contain &#x6B64;&#x65F6;&#x4F1A;&#x4FDD;&#x6301;&#x56FE;&#x50CF;&#x7684;&#x7EB5;&#x6A2A;&#x6BD4;&#x5E76;&#x5C06;&#x56FE;&#x50CF;&#x7F29;&#x653E;&#x6210;&#x5C06;&#x9002;&#x5408;&#x80CC;&#x666F;&#x5B9A;&#x4F4D;&#x533A;&#x57DF;&#x7684;&#x6700;&#x5927;&#x5927;&#x5C0F;&#x3002;</p>
+</li>
+<li><p>&#x5177;&#x4F53;&#x7684;&#x5BBD;&#x9AD8;</p>
+</li>
+</ul>
+<h3 id="52-background-origin">5.2 background-origin</h3>
+<p>&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x5F00;&#x59CB;&#x7684;&#x4F4D;&#x7F6E;</p>
+<p>border-box&#xFF1A;&#x4ECE;border&#x5F00;&#x59CB;</p>
+<p>content-box&#xFF1A;&#x5185;&#x5BB9;&#x533A;&#x57DF;&#x5F00;&#x59CB;</p>
+<p>padding-box&#xFF1A;&#x4ECE;padding&#x5F00;&#x59CB;</p>
+<h3 id="53-background-clip">5.3 background-clip</h3>
+<p>&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x88C1;&#x526A;&#x7684;&#x4F4D;&#x7F6E;</p>
+<p>border-box&#xFF1A;&#x4ECE;border&#x5F00;&#x59CB;&#x88C1;&#x526A;</p>
+<p>content-box&#xFF1A;&#x5185;&#x5BB9;&#x533A;&#x57DF;&#x5F00;&#x59CB;&#x88C1;&#x526A;</p>
+<p>padding-box&#xFF1A;&#x4ECE;padding&#x5F00;&#x59CB;&#x88C1;&#x526A;</p>
+<h2 id="6&#x6E10;&#x53D8;">6.&#x6E10;&#x53D8;</h2>
+<h3 id="61-&#x7EBF;&#x6027;&#x6E10;&#x53D8;">6.1 &#x7EBF;&#x6027;&#x6E10;&#x53D8;</h3>
+<pre><code class="lang-css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">direction</span>, <span class="hljs-selector-tag">color-stop1</span>, <span class="hljs-selector-tag">color-stop2</span>, ...);
+<span class="hljs-comment">/*
+    direction &#x7528;&#x89D2;&#x5EA6;&#x503C;&#x6307;&#x5B9A;&#x6E10;&#x53D8;&#x7684;&#x65B9;&#x5411;&#xFF08;&#x6216;&#x89D2;&#x5EA6;&#xFF09;
+    color-stop1, color-stop2,... &#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x6E10;&#x53D8;&#x7684;&#x8D77;&#x6B62;&#x989C;&#x8272;&#x3002;
+*/</span>
+</code></pre>
+<h3 id="62-&#x5F84;&#x5411;&#x6E10;&#x53D8;">6.2 &#x5F84;&#x5411;&#x6E10;&#x53D8;</h3>
+<pre><code class="lang-css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">radial-gradient</span>(<span class="hljs-selector-tag">center</span>, <span class="hljs-selector-tag">shape</span> <span class="hljs-selector-tag">size</span>, <span class="hljs-selector-tag">start-color</span>, ..., <span class="hljs-selector-tag">last-color</span>);
+</code></pre>
+<h2 id="7-&#x8F6C;&#x6362;">7. &#x8F6C;&#x6362;</h2>
+<p>&#x53D8;&#x6362;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x8BA9;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x6539;&#x53D8;&#x5F62;&#x72B6;&#xFF0C;&#x5927;&#x5C0F;&#x548C;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x4F7F;&#x7528;transform&#x5C5E;&#x6027;&#x5C31;&#x53EF;&#x4EE5;&#x8BBE;&#x5B9A;&#x8F6C;&#x6362;</p>
+<h3 id="71-2d-&#x8F6C;&#x6362;">7.1 2D &#x8F6C;&#x6362;</h3>
+<h4 id="711-translate-&#x65B9;&#x6CD5;">7.1.1 translate() &#x65B9;&#x6CD5;</h4>
+<p>translate()&#x65B9;&#x6CD5;&#xFF0C;&#x6839;&#x636E;&#x5DE6;(X&#x8F74;)&#x548C;&#x9876;&#x90E8;(Y&#x8F74;)&#x4F4D;&#x7F6E;&#x7ED9;&#x5B9A;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4ECE;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x4F4D;&#x7F6E;&#x79FB;&#x52A8;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(50px, 100px);
+    <span class="hljs-attribute">-ms-transform</span>: <span class="hljs-built_in">translate</span>(50px, 100px);
+    <span class="hljs-comment">/* IE 9 */</span>
+    <span class="hljs-attribute">-webkit-transform</span>: <span class="hljs-built_in">translate</span>(50px, 100px);
+    <span class="hljs-comment">/* Safari and Chrome */</span>
+}
+
+<span class="hljs-comment">/* translate&#x503C;&#xFF08;50px&#xFF0C;100px&#xFF09;&#x662F;&#x4ECE;&#x5DE6;&#x8FB9;&#x5143;&#x7D20;&#x79FB;&#x52A8;50&#x4E2A;&#x50CF;&#x7D20;&#xFF0C;&#x5E76;&#x4ECE;&#x9876;&#x90E8;&#x79FB;&#x52A8;100&#x50CF;&#x7D20; */</span>
+</code></pre>
+<h4 id="712-rotate-&#x65B9;&#x6CD5;">7.1.2 rotate() &#x65B9;&#x6CD5;</h4>
+<p>rotate()&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x5EA6;&#x6570;&#x987A;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#x7684;&#x5143;&#x7D20;&#x3002;&#x8D1F;&#x503C;&#x662F;&#x5141;&#x8BB8;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x662F;&#x5143;&#x7D20;&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(30deg);
+    <span class="hljs-attribute">-ms-transform</span>: <span class="hljs-built_in">rotate</span>(30deg);
+    <span class="hljs-comment">/* IE 9 */</span>
+    <span class="hljs-attribute">-webkit-transform</span>: <span class="hljs-built_in">rotate</span>(30deg);
+    <span class="hljs-comment">/* Safari and Chrome */</span>
+}
+</code></pre>
+<h4 id="713-scale-&#x65B9;&#x6CD5;">7.1.3 scale() &#x65B9;&#x6CD5;</h4>
+<p>scale()&#x65B9;&#x6CD5;&#xFF0C;&#x8BE5;&#x5143;&#x7D20;&#x589E;&#x52A0;&#x6216;&#x51CF;&#x5C11;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x5BBD;&#x5EA6;&#xFF08;X&#x8F74;&#xFF09;&#x548C;&#x9AD8;&#x5EA6;&#xFF08;Y&#x8F74;&#xFF09;&#x7684;&#x53C2;&#x6570;</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">-ms-transform</span>: <span class="hljs-built_in">scale</span>(2, 3);
+    <span class="hljs-comment">/* IE 9 */</span>
+    <span class="hljs-attribute">-webkit-transform</span>: <span class="hljs-built_in">scale</span>(2, 3);
+    <span class="hljs-comment">/* Safari */</span>
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">scale</span>(2, 3);
+    <span class="hljs-comment">/* &#x6807;&#x51C6;&#x8BED;&#x6CD5; */</span>
+}
+<span class="hljs-comment">/* scale&#xFF08;2,3&#xFF09;&#x8F6C;&#x53D8;&#x5BBD;&#x5EA6;&#x4E3A;&#x539F;&#x6765;&#x7684;&#x5927;&#x5C0F;&#x7684;2&#x500D;&#xFF0C;&#x548C;&#x5176;&#x539F;&#x59CB;&#x5927;&#x5C0F;3&#x500D;&#x7684;&#x9AD8;&#x5EA6; */</span>
+</code></pre>
+<h4 id="714-skew-&#x65B9;&#x6CD5;">7.1.4 skew() &#x65B9;&#x6CD5;</h4>
+<p><code>transform:skew(&lt;angle&gt; [,&lt;angle&gt;]);</code></p>
+<p>&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x5206;&#x522B;&#x8868;&#x793A;X&#x8F74;&#x548C;Y&#x8F74;&#x503E;&#x659C;&#x7684;&#x89D2;&#x5EA6;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF0C;&#x53C2;&#x6570;&#x4E3A;&#x8D1F;&#x8868;&#x793A;&#x5411;&#x76F8;&#x53CD;&#x65B9;&#x5411;&#x503E;&#x659C;&#x3002;</p>
+<p>skewX(angle);&#x8868;&#x793A;&#x53EA;&#x5728;X&#x8F74;(&#x6C34;&#x5E73;&#x65B9;&#x5411;)&#x503E;&#x659C;&#x3002;</p>
+<p>skewY(angle);&#x8868;&#x793A;&#x53EA;&#x5728;Y&#x8F74;(&#x5782;&#x76F4;&#x65B9;&#x5411;)&#x503E;&#x659C;&#x3002;</p>
+<pre><code class="lang-css">
+<span class="hljs-selector-tag">div</span> {
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">skew</span>(30deg, 20deg);
+    <span class="hljs-attribute">-ms-transform</span>: <span class="hljs-built_in">skew</span>(30deg, 20deg);
+    <span class="hljs-comment">/* IE 9 */</span>
+    <span class="hljs-attribute">-webkit-transform</span>: <span class="hljs-built_in">skew</span>(30deg, 20deg);
+    <span class="hljs-comment">/* Safari and Chrome */</span>
+}
+<span class="hljs-comment">/* skew(30deg,20deg) &#x5143;&#x7D20;&#x5728;X&#x8F74;&#x548C;Y&#x8F74;&#x4E0A;&#x503E;&#x659C;20&#x5EA6;30&#x5EA6; */</span>
+</code></pre>
+<h4 id="715-transform-origin-&#x5C5E;&#x6027;">7.1.5 transform-origin &#x5C5E;&#x6027;</h4>
+<p>&#x8BBE;&#x7F6E;&#x65CB;&#x8F6C;&#x5143;&#x7D20;&#x7684;&#x57FA;&#x70B9;&#x4F4D;&#x7F6E;</p>
+<p><code>transform-origin: x-axis y-axis z-axis;</code></p>
+<p>x-axis
+&#x5B9A;&#x4E49;&#x89C6;&#x56FE;&#x88AB;&#x7F6E;&#x4E8E; X &#x8F74;&#x7684;&#x4F55;&#x5904;&#x3002;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1A;
+left
+center
+right
+length
+%</p>
+<p>y-axis
+&#x5B9A;&#x4E49;&#x89C6;&#x56FE;&#x88AB;&#x7F6E;&#x4E8E; Y &#x8F74;&#x7684;&#x4F55;&#x5904;&#x3002;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1A;
+top
+center
+bottom
+length
+%</p>
+<p>-axis
+&#x5B9A;&#x4E49;&#x89C6;&#x56FE;&#x88AB;&#x7F6E;&#x4E8E; Z &#x8F74;&#x7684;&#x4F55;&#x5904;&#x3002;&#x53EF;&#x80FD;&#x7684;&#x503C;&#xFF1A;
+length</p>
+<h3 id="72-3d-&#x8F6C;&#x6362;">7.2 3D &#x8F6C;&#x6362;</h3>
+<h4 id="721-transform-style-&#x5C5E;&#x6027;">7.2.1 transform-style &#x5C5E;&#x6027;</h4>
+<p>&#x6307;&#x5B9A;&#x5D4C;&#x5957;&#x5143;&#x7D20;&#x662F;&#x600E;&#x6837;&#x5728;&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x4E2D;&#x5448;&#x73B0;</p>
+<p><code>transform-style: flat|preserve-3d;</code></p>
+<ul>
+<li><p>flat &#x8868;&#x793A;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;&#x5728;2D&#x5E73;&#x9762;&#x5448;&#x73B0;&#x3002;</p>
+</li>
+<li><p>preserve-3d &#x8868;&#x793A;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;&#x5728;3D&#x7A7A;&#x95F4;&#x4E2D;&#x5448;&#x73B0;&#x3002;</p>
+</li>
+</ul>
+<h4 id="722-perspective-&#x5C5E;&#x6027;">7.2.2 perspective &#x5C5E;&#x6027;</h4>
+<p>&#x5448;&#x73B0;&#x8FD1;&#x5927;&#x8FDC;&#x5C0F;&#x6548;&#x679C;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#xFF0C;&#x6CA1;&#x6709;&#x8FD1;&#x5927;&#x8FDC;&#x5C0F;&#x6548;&#x679C;(&#x7ACB;&#x4F53;&#x6548;&#x679C;)&#xFF0C;&#x8D8A;&#x8FD1;&#x8D8A;&#x5927; &#x5230;0&#x770B;&#x4E0D;&#x89C1;</p>
+<p><code>perspective: number|none;</code></p>
+<ul>
+<li><p>number&#x5143;&#x7D20;&#x8DDD;&#x79BB;&#x89C6;&#x56FE;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x4EE5;&#x50CF;&#x7D20;&#x8BA1;&#x3002;</p>
+</li>
+<li><p>none&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x4E0E; 0 &#x76F8;&#x540C;&#x3002;&#x4E0D;&#x8BBE;&#x7F6E;&#x900F;&#x89C6;&#x3002;</p>
+</li>
+</ul>
+<blockquote>
+<p>&#x4E00;&#x822C;&#x8981;&#x8BBE;&#x7F6E;100&#x4EE5;&#x4E0A;&#x7684;&#x503C;&#xFF0C;&#x5426;&#x5219;&#x6548;&#x679C;&#x7279;&#x522B;&#x5938;&#x5F20;&#xFF01;</p>
+</blockquote>
+<h4 id="723-backface-visibility-&#x5C5E;&#x6027;">7.2.3 backface-visibility &#x5C5E;&#x6027;</h4>
+<p>backface-visibility &#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x5F53;&#x5143;&#x7D20;&#x4E0D;&#x9762;&#x5411;&#x5C4F;&#x5E55;&#x65F6;&#x662F;&#x5426;&#x53EF;&#x89C1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;&#x65CB;&#x8F6C;&#x5143;&#x7D20;&#x4E0D;&#x5E0C;&#x671B;&#x770B;&#x5230;&#x5176;&#x80CC;&#x9762;&#x65F6;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x5F88;&#x6709;&#x7528;&#x3002;</p>
+<p><code>backface-visibility: visible|hidden;</code></p>
+<ul>
+<li>visible &#x80CC;&#x9762;&#x662F;&#x53EF;&#x89C1;&#x7684;&#x3002;</li>
+<li>hidden &#x80CC;&#x9762;&#x662F;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#x3002;</li>
+</ul>
+<h4 id="724-&#x5404;&#x79CD;3d&#x8F6C;&#x6362;&#x65B9;&#x6CD5;">7.2.4 &#x5404;&#x79CD;3D&#x8F6C;&#x6362;&#x65B9;&#x6CD5;</h4>
+<ul>
+<li>translate3d(x,y,z)    &#x5B9A;&#x4E49; 3D &#x8F6C;&#x5316;&#x3002;</li>
+<li>translateX(x)    &#x5B9A;&#x4E49; 3D &#x8F6C;&#x5316;&#xFF0C;&#x4EC5;&#x4F7F;&#x7528;&#x7528;&#x4E8E; X &#x8F74;&#x7684;&#x503C;&#x3002;</li>
+<li>translateY(y)    &#x5B9A;&#x4E49; 3D &#x8F6C;&#x5316;&#xFF0C;&#x4EC5;&#x4F7F;&#x7528;&#x7528;&#x4E8E; Y &#x8F74;&#x7684;&#x503C;&#x3002;</li>
+<li>translateZ(z)    &#x5B9A;&#x4E49; 3D &#x8F6C;&#x5316;&#xFF0C;&#x4EC5;&#x4F7F;&#x7528;&#x7528;&#x4E8E; Z &#x8F74;&#x7684;&#x503C;&#x3002;</li>
+<li>scale3d(x,y,z)    &#x5B9A;&#x4E49; 3D &#x7F29;&#x653E;&#x8F6C;&#x6362;&#x3002;</li>
+<li>scaleX(x)    &#x5B9A;&#x4E49; 3D &#x7F29;&#x653E;&#x8F6C;&#x6362;&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A; X &#x8F74;&#x7684;&#x503C;&#x3002;</li>
+<li>scaleY(y)    &#x5B9A;&#x4E49; 3D &#x7F29;&#x653E;&#x8F6C;&#x6362;&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A; Y &#x8F74;&#x7684;&#x503C;&#x3002;</li>
+<li>scaleZ(z)    &#x5B9A;&#x4E49; 3D &#x7F29;&#x653E;&#x8F6C;&#x6362;&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A; Z &#x8F74;&#x7684;&#x503C;&#x3002;</li>
+<li>rotate3d(x,y,z,angle)    &#x5B9A;&#x4E49; 3D &#x65CB;&#x8F6C;&#x3002;</li>
+<li>rotateX(angle)    &#x5B9A;&#x4E49;&#x6CBF; X &#x8F74;&#x7684; 3D &#x65CB;&#x8F6C;&#x3002;</li>
+<li>rotateY(angle)    &#x5B9A;&#x4E49;&#x6CBF; Y &#x8F74;&#x7684; 3D &#x65CB;&#x8F6C;&#x3002;</li>
+<li>rotateZ(angle)    &#x5B9A;&#x4E49;&#x6CBF; Z &#x8F74;&#x7684; 3D &#x65CB;&#x8F6C;&#x3002;</li>
+</ul>
+<h2 id="8&#x8FC7;&#x6E21;">8.&#x8FC7;&#x6E21;</h2>
+<p>CSS3 &#x8FC7;&#x6E21;&#x662F;&#x5143;&#x7D20;&#x4ECE;&#x4E00;&#x79CD;&#x6837;&#x5F0F;&#x9010;&#x6E10;&#x6539;&#x53D8;&#x4E3A;&#x53E6;&#x4E00;&#x79CD;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+<p>&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x5FC5;&#x987B;&#x89C4;&#x5B9A;&#x4E24;&#x9879;&#x5185;&#x5BB9;&#xFF1A;</p>
+<ul>
+<li>&#x6307;&#x5B9A;&#x8981;&#x6DFB;&#x52A0;&#x6548;&#x679C;&#x7684;CSS&#x5C5E;&#x6027;</li>
+<li>&#x6307;&#x5B9A;&#x6548;&#x679C;&#x7684;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x3002;</li>
+</ul>
+<h3 id="81-transition-property&#x5C5E;&#x6027;">8.1 transition-property&#x5C5E;&#x6027;</h3>
+<p>transition-property&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x54EA;&#x4E9B;CSS&#x5C5E;&#x6027;&#x4F1A;&#x6709;&#x8FC7;&#x6E21;&#x6548;&#x679C;</p>
+<p><code>transition-property: none|all| property</code></p>
+<ul>
+<li>none    &#x6CA1;&#x6709;&#x5C5E;&#x6027;&#x4F1A;&#x83B7;&#x5F97;&#x8FC7;&#x6E21;&#x6548;&#x679C;&#x3002;</li>
+<li>all    &#x6240;&#x6709;&#x5C5E;&#x6027;&#x90FD;&#x5C06;&#x83B7;&#x5F97;&#x8FC7;&#x6E21;&#x6548;&#x679C;&#x3002;</li>
+<li>property    &#x5B9A;&#x4E49;&#x5E94;&#x7528;&#x8FC7;&#x6E21;&#x6548;&#x679C;&#x7684; CSS &#x5C5E;&#x6027;&#x540D;&#x79F0;&#x5217;&#x8868;&#xFF0C;&#x5217;&#x8868;&#x4EE5;&#x9017;&#x53F7;&#x5206;&#x9694;&#x3002;</li>
+</ul>
+<h3 id="82-transition-duration-&#x5C5E;&#x6027;">8.2 transition-duration &#x5C5E;&#x6027;</h3>
+<p>transition-duration &#x5C5E;&#x6027;&#x89C4;&#x5B9A;&#x5B8C;&#x6210;&#x8FC7;&#x6E21;&#x6548;&#x679C;&#x9700;&#x8981;&#x82B1;&#x8D39;&#x7684;&#x65F6;&#x95F4;</p>
+<p><code>transition-duration: time;</code></p>
+<ul>
+<li>time    &#x89C4;&#x5B9A;&#x5B8C;&#x6210;&#x8FC7;&#x6E21;&#x6548;&#x679C;&#x9700;&#x8981;&#x82B1;&#x8D39;&#x7684;&#x65F6;&#x95F4;&#xFF08;&#x4EE5;&#x79D2;&#x6216;&#x6BEB;&#x79D2;&#x8BA1;&#xFF09;&#x3002; &#x9ED8;&#x8BA4;&#x503C;&#x662F; 0&#xFF0C;&#x610F;&#x5473;&#x7740;&#x4E0D;&#x4F1A;&#x6709;&#x6548;&#x679C;&#x3002;</li>
+</ul>
+<p>&#x4F8B;&#xFF1A;<code>transition-duration: 5s;</code></p>
+<h3 id="83-transition-timing-function-&#x5C5E;&#x6027;">8.3 transition-timing-function &#x5C5E;&#x6027;</h3>
+<p>transition-timing-function&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x5207;&#x6362;&#x6548;&#x679C;&#x7684;&#x901F;&#x5EA6;&#x3002;
+&#x6B64;&#x5C5E;&#x6027;&#x5141;&#x8BB8;&#x4E00;&#x4E2A;&#x8FC7;&#x6E21;&#x6548;&#x679C;&#xFF0C;&#x4EE5;&#x6539;&#x53D8;&#x5176;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x7684;&#x901F;&#x5EA6;</p>
+<p><code>transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out;</code></p>
+<ul>
+<li>linear    &#x89C4;&#x5B9A;&#x4EE5;&#x76F8;&#x540C;&#x901F;&#x5EA6;&#x5F00;&#x59CB;&#x81F3;&#x7ED3;&#x675F;&#x7684;&#x8FC7;&#x6E21;&#x6548;&#x679C;</li>
+<li>ease    &#x89C4;&#x5B9A;&#x6162;&#x901F;&#x5F00;&#x59CB;&#xFF0C;&#x7136;&#x540E;&#x53D8;&#x5FEB;&#xFF0C;&#x7136;&#x540E;&#x6162;&#x901F;&#x7ED3;&#x675F;&#x7684;&#x8FC7;&#x6E21;&#x6548;&#x679C;</li>
+<li>ease-in    &#x89C4;&#x5B9A;&#x4EE5;&#x6162;&#x901F;&#x5F00;&#x59CB;&#x7684;&#x8FC7;&#x6E21;&#x6548;&#x679C;</li>
+<li>ease-out    &#x89C4;&#x5B9A;&#x4EE5;&#x6162;&#x901F;&#x7ED3;&#x675F;&#x7684;&#x8FC7;&#x6E21;&#x6548;&#x679C;</li>
+<li>ease-in-out    &#x89C4;&#x5B9A;&#x4EE5;&#x6162;&#x901F;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x7684;&#x8FC7;&#x6E21;&#x6548;&#x679C;</li>
+</ul>
+<h3 id="84-transition-delay-&#x5C5E;&#x6027;">8.4 transition-delay &#x5C5E;&#x6027;</h3>
+<p>transition-delay &#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x4F55;&#x65F6;&#x5C06;&#x5F00;&#x59CB;&#x5207;&#x6362;&#x6548;&#x679C;</p>
+<p><code>transition-delay: time;</code></p>
+<ul>
+<li>time    &#x6307;&#x5B9A;&#x79D2;&#x6216;&#x6BEB;&#x79D2;&#x6570;&#x4E4B;&#x524D;&#x8981;&#x7B49;&#x5F85;&#x5207;&#x6362;&#x6548;&#x679C;&#x5F00;&#x59CB;</li>
+</ul>
+<h3 id="85-transition-&#x5C5E;&#x6027;">8.5 transition &#x5C5E;&#x6027;</h3>
+<p>transition&#x5C5E;&#x6027;&#x662F;&#x4EE5;&#x4E0A;&#x56DB;&#x79CD;&#x8FC7;&#x6E21;&#x5C5E;&#x6027;&#x7684;&#x8FDE;&#x5199;&#x5F62;&#x5F0F;</p>
+<p><code>transition: property duration timing-function delay;</code></p>
+<h2 id="9&#x52A8;&#x753B;">9.&#x52A8;&#x753B;</h2>
+<h3 id="91-&#x5B9A;&#x4E49;&#x52A8;&#x753B;">9.1 &#x5B9A;&#x4E49;&#x52A8;&#x753B;</h3>
+<p>&#x52A8;&#x753B;&#x662F;&#x4F7F;&#x5143;&#x7D20;&#x4ECE;&#x4E00;&#x79CD;&#x6837;&#x5F0F;&#x9010;&#x6E10;&#x53D8;&#x5316;&#x4E3A;&#x53E6;&#x4E00;&#x79CD;&#x6837;&#x5F0F;&#x7684;&#x6548;&#x679C;&#x3002;
+&#x60A8;&#x53EF;&#x4EE5;&#x6539;&#x53D8;&#x4EFB;&#x610F;&#x591A;&#x7684;&#x6837;&#x5F0F;&#x4EFB;&#x610F;&#x591A;&#x7684;&#x6B21;&#x6570;&#x3002;
+&#x8BF7;&#x7528;&#x767E;&#x5206;&#x6BD4;&#x6765;&#x89C4;&#x5B9A;&#x53D8;&#x5316;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x6216;&#x7528;&#x5173;&#x952E;&#x8BCD; &quot;from&quot; &#x548C; &quot;to&quot;&#xFF0C;&#x7B49;&#x540C;&#x4E8E; 0% &#x548C; 100%&#x3002;
+0% &#x662F;&#x52A8;&#x753B;&#x7684;&#x5F00;&#x59CB;&#xFF0C;100% &#x662F;&#x52A8;&#x753B;&#x7684;&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&apos;@keyframe &#x81EA;&#x5B9A;&#x4E49;&#x52A8;&#x753B;&#x540D;&#x79F0;&apos;&#x5B9A;&#x4E49;&#x52A8;&#x753B;</p>
+<pre><code class="lang-css">@<span class="hljs-keyword">keyframes</span> myfirst
+{
+    0%   {<span class="hljs-attribute">background</span>: red;}
+    25%  {<span class="hljs-attribute">background</span>: yellow;}
+    50%  {<span class="hljs-attribute">background</span>: blue;}
+    100% {<span class="hljs-attribute">background</span>: green;}
+}
+
+@<span class="hljs-keyword">keyframes</span> myfirst
+{
+    <span class="hljs-selector-tag">from</span> {<span class="hljs-attribute">background</span>: red;}
+    <span class="hljs-selector-tag">to</span> {<span class="hljs-attribute">background</span>: yellow;}
+}
+</code></pre>
+<h3 id="92-&#x4F7F;&#x7528;&#x52A8;&#x753B;">9.2 &#x4F7F;&#x7528;&#x52A8;&#x753B;</h3>
+<p>&#x5F53;&#x5728; @keyframes &#x521B;&#x5EFA;&#x5B8C;&#x52A8;&#x753B;&#x540E;&#xFF0C;&#x628A;&#x5B83;&#x7ED1;&#x5B9A;&#x5230;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x5426;&#x5219;&#x52A8;&#x753B;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x6548;&#x679C;&#x3002;</p>
+<p>&#x6307;&#x5B9A;&#x81F3;&#x5C11;&#x8FD9;&#x4E24;&#x4E2A;CSS3&#x7684;&#x52A8;&#x753B;&#x5C5E;&#x6027;&#x7ED1;&#x5B9A;&#x5411;&#x4E00;&#x4E2A;&#x9009;&#x62E9;&#x5668;&#xFF1A;</p>
+<ul>
+<li>&#x89C4;&#x5B9A;&#x52A8;&#x753B;&#x7684;&#x540D;&#x79F0;</li>
+<li>&#x89C4;&#x5B9A;&#x52A8;&#x753B;&#x7684;&#x65F6;&#x957F;</li>
+</ul>
+<p><code>animation: name duration timing-function delay iteration-count direction fill-mode play-state;</code></p>
+<ul>
+<li>animation-name    &#x6307;&#x5B9A;&#x8981;&#x7ED1;&#x5B9A;&#x5230;&#x9009;&#x62E9;&#x5668;&#x7684;&#x5173;&#x952E;&#x5E27;&#x7684;&#x540D;&#x79F0;</li>
+<li>animation-duration    &#x52A8;&#x753B;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x591A;&#x5C11;&#x79D2;&#x6216;&#x6BEB;&#x79D2;&#x5B8C;&#x6210;</li>
+<li>animation-timing-function    &#x8BBE;&#x7F6E;&#x52A8;&#x753B;&#x5C06;&#x5982;&#x4F55;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x5468;&#x671F;</li>
+<li>animation-delay    &#x8BBE;&#x7F6E;&#x52A8;&#x753B;&#x5728;&#x542F;&#x52A8;&#x524D;&#x7684;&#x5EF6;&#x8FDF;&#x95F4;&#x9694;&#x3002;</li>
+<li><p>animation-iteration-count    &#x5B9A;&#x4E49;&#x52A8;&#x753B;&#x7684;&#x64AD;&#x653E;&#x6B21;&#x6570;&#x3002;</p>
+<ul>
+<li><p>infinite &#x6307;&#x5B9A;&#x52A8;&#x753B;&#x5E94;&#x8BE5;&#x64AD;&#x653E;&#x65E0;&#x9650;&#x6B21;&#xFF08;&#x6C38;&#x8FDC;&#xFF09;</p>
+</li>
+<li><p>n &#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5B9A;&#x4E49;&#x5E94;&#x8BE5;&#x64AD;&#x653E;&#x591A;&#x5C11;&#x6B21;&#x52A8;&#x753B;</p>
+</li>
+</ul>
+</li>
+<li><p>animation-direction    &#x6307;&#x5B9A;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x8F6E;&#x6D41;&#x53CD;&#x5411;&#x64AD;&#x653E;&#x52A8;&#x753B;&#x3002;</p>
+<ul>
+<li>normal    &#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x52A8;&#x753B;&#x6309;&#x6B63;&#x5E38;&#x64AD;&#x653E;&#x3002;</li>
+<li>reverse    &#x52A8;&#x753B;&#x53CD;&#x5411;&#x64AD;&#x653E;</li>
+<li>alternate    &#x52A8;&#x753B;&#x5728;&#x5947;&#x6570;&#x6B21;&#xFF08;1&#x3001;3&#x3001;5...&#xFF09;&#x6B63;&#x5411;&#x64AD;&#x653E;&#xFF0C;&#x5728;&#x5076;&#x6570;&#x6B21;&#xFF08;2&#x3001;4&#x3001;6...&#xFF09;&#x53CD;&#x5411;&#x64AD;&#x653E;</li>
+<li>alternate-reverse    &#x52A8;&#x753B;&#x5728;&#x5947;&#x6570;&#x6B21;&#xFF08;1&#x3001;3&#x3001;5...&#xFF09;&#x53CD;&#x5411;&#x64AD;&#x653E;&#xFF0C;&#x5728;&#x5076;&#x6570;&#x6B21;&#xFF08;2&#x3001;4&#x3001;6...&#xFF09;&#x6B63;&#x5411;&#x64AD;&#x653E;</li>
+</ul>
+</li>
+<li><p>animation-fill-mode    &#x89C4;&#x5B9A;&#x5F53;&#x52A8;&#x753B;&#x4E0D;&#x64AD;&#x653E;&#x65F6;&#xFF08;&#x5F53;&#x52A8;&#x753B;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x6216;&#x5F53;&#x52A8;&#x753B;&#x6709;&#x4E00;&#x4E2A;&#x5EF6;&#x8FDF;&#x672A;&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x65F6;&#xFF09;&#xFF0C;&#x8981;&#x5E94;&#x7528;&#x5230;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;&#x3002;</p>
+</li>
+<li>animation-play-state    &#x6307;&#x5B9A;&#x52A8;&#x753B;&#x662F;&#x5426;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x6216;&#x5DF2;&#x6682;&#x505C;&#x3002;</li>
+</ul>
+<h2 id="10&#x5F39;&#x6027;&#x76D2;&#x5B50;">10.&#x5F39;&#x6027;&#x76D2;&#x5B50;</h2>
+<p>&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x662F; CSS3 &#x7684;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x5E03;&#x5C40;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>CSS3 &#x5F39;&#x6027;&#x76D2;&#xFF08; Flexible Box &#x6216; flexbox&#xFF09;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x5F53;&#x9875;&#x9762;&#x9700;&#x8981;&#x9002;&#x5E94;&#x4E0D;&#x540C;&#x7684;&#x5C4F;&#x5E55;&#x5927;&#x5C0F;&#x4EE5;&#x53CA;&#x8BBE;&#x5907;&#x7C7B;&#x578B;&#x65F6;&#x786E;&#x4FDD;&#x5143;&#x7D20;&#x62E5;&#x6709;&#x6070;&#x5F53;&#x7684;&#x884C;&#x4E3A;&#x7684;&#x5E03;&#x5C40;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x5F15;&#x5165;&#x5F39;&#x6027;&#x76D2;&#x5E03;&#x5C40;&#x6A21;&#x578B;&#x7684;&#x76EE;&#x7684;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x66F4;&#x52A0;&#x6709;&#x6548;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5BF9;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6392;&#x5217;&#x3001;&#x5BF9;&#x9F50;&#x548C;&#x5206;&#x914D;&#x7A7A;&#x767D;&#x7A7A;&#x95F4;&#x3002;</p>
+<h3 id="101-css3-&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5185;&#x5BB9;">10.1 CSS3 &#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5185;&#x5BB9;</h3>
+<p>&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x7531;&#x5F39;&#x6027;&#x5BB9;&#x5668;(Flex container)&#x548C;&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;(Flex item)&#x7EC4;&#x6210;&#x3002;</p>
+<p>&#x5F39;&#x6027;&#x5BB9;&#x5668;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E; display &#x5C5E;&#x6027;&#x7684;&#x503C;&#x4E3A; flex &#x6216; inline-flex&#x5C06;&#x5176;&#x5B9A;&#x4E49;&#x4E3A;&#x5F39;&#x6027;&#x5BB9;&#x5668;&#x3002;</p>
+<p>&#x5F39;&#x6027;&#x5BB9;&#x5668;&#x5185;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A; &#x5F39;&#x6027;&#x5BB9;&#x5668;&#x5916;&#x53CA;&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;&#x5185;&#x662F;&#x6B63;&#x5E38;&#x6E32;&#x67D3;&#x7684;&#x3002;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x53EA;&#x5B9A;&#x4E49;&#x4E86;&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;&#x5982;&#x4F55;&#x5728;&#x5F39;&#x6027;&#x5BB9;&#x5668;&#x5185;&#x5E03;&#x5C40;&#x3002;
+&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;&#x901A;&#x5E38;&#x5728;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5185;&#x4E00;&#x884C;&#x663E;&#x793A;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x6BCF;&#x4E2A;&#x5BB9;&#x5668;&#x53EA;&#x6709;&#x4E00;&#x884C;</p>
+</blockquote>
+<h3 id="102-flex-direction-&#x5C5E;&#x6027;">10.2 flex-direction &#x5C5E;&#x6027;</h3>
+<p>flex-direction &#x6307;&#x5B9A;&#x5F39;&#x6027;&#x5BB9;&#x5668;&#x4E3B;&#x8F74;&#x7684;&#x65B9;&#x5411;</p>
+<p><code>flex-direction: row | row-reverse | column | column-reverse</code></p>
+<p>flex-direction&#x7684;&#x503C;&#x6709;:</p>
+<ul>
+<li>row&#xFF1A;&#x6A2A;&#x5411;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x6392;&#x5217;&#xFF08;&#x5DE6;&#x5BF9;&#x9F50;&#xFF09;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x6392;&#x5217;&#x65B9;&#x5F0F;&#x3002;</li>
+<li>row-reverse&#xFF1A;&#x53CD;&#x8F6C;&#x6A2A;&#x5411;&#x6392;&#x5217;&#xFF08;&#x53F3;&#x5BF9;&#x9F50;&#xFF0C;&#x4ECE;&#x540E;&#x5F80;&#x524D;&#x6392;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x9879;&#x6392;&#x5728;&#x6700;&#x524D;&#x9762;&#x3002;</li>
+<li>column&#xFF1A;&#x7EB5;&#x5411;&#x6392;&#x5217;&#x3002;</li>
+<li>column-reverse&#xFF1A;&#x53CD;&#x8F6C;&#x7EB5;&#x5411;&#x6392;&#x5217;&#xFF0C;&#x4ECE;&#x540E;&#x5F80;&#x524D;&#x6392;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x9879;&#x6392;&#x5728;&#x6700;&#x4E0A;&#x9762;&#x3002;</li>
+</ul>
+<h3 id="103-justify-content-&#x5C5E;&#x6027;">10.3 justify-content &#x5C5E;&#x6027;</h3>
+<p>&#x5185;&#x5BB9;&#x5BF9;&#x9F50;&#xFF08;justify-content&#xFF09;&#x5C5E;&#x6027;&#x5E94;&#x7528;&#x5728;&#x5F39;&#x6027;&#x5BB9;&#x5668;&#x4E0A;&#xFF0C;&#x7528;&#x4E8E;&#x8BBE;&#x5B9A;&#x5F39;&#x6027;&#x5B50;&#x5BB9;&#x5668;&#x5728;&#x5F39;&#x6027;&#x5BB9;&#x5668;&#x4E2D;&#x4E3B;&#x8F74;&#x65B9;&#x5411;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;</p>
+<p><code>justify-content: flex-start | flex-end | center | space-between | space-around</code></p>
+<ul>
+<li><p>flex-start&#xFF1A;
+&#x5F39;&#x6027;&#x9879;&#x76EE;&#x5411;&#x884C;&#x5934;&#x7D27;&#x6328;&#x7740;&#x586B;&#x5145;&#x3002;&#x8FD9;&#x4E2A;&#x662F;&#x9ED8;&#x8BA4;&#x503C;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x9879;&#x7684;main-start&#x5916;&#x8FB9;&#x8DDD;&#x8FB9;&#x7EBF;&#x88AB;&#x653E;&#x7F6E;&#x5728;&#x8BE5;&#x884C;&#x7684;main-start&#x8FB9;&#x7EBF;&#xFF0C;&#x800C;&#x540E;&#x7EED;&#x5F39;&#x6027;&#x9879;&#x4F9D;&#x6B21;&#x5E73;&#x9F50;&#x6446;&#x653E;&#x3002;</p>
+</li>
+<li><p>flex-end&#xFF1A;
+&#x5F39;&#x6027;&#x9879;&#x76EE;&#x5411;&#x884C;&#x5C3E;&#x7D27;&#x6328;&#x7740;&#x586B;&#x5145;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x9879;&#x7684;main-end&#x5916;&#x8FB9;&#x8DDD;&#x8FB9;&#x7EBF;&#x88AB;&#x653E;&#x7F6E;&#x5728;&#x8BE5;&#x884C;&#x7684;main-end&#x8FB9;&#x7EBF;&#xFF0C;&#x800C;&#x540E;&#x7EED;&#x5F39;&#x6027;&#x9879;&#x4F9D;&#x6B21;&#x5E73;&#x9F50;&#x6446;&#x653E;&#x3002;</p>
+</li>
+<li><p>center&#xFF1A;
+&#x5F39;&#x6027;&#x9879;&#x76EE;&#x5C45;&#x4E2D;&#x7D27;&#x6328;&#x7740;&#x586B;&#x5145;&#x3002;&#xFF08;&#x5982;&#x679C;&#x5269;&#x4F59;&#x7684;&#x81EA;&#x7531;&#x7A7A;&#x95F4;&#x662F;&#x8D1F;&#x7684;&#xFF0C;&#x5219;&#x5F39;&#x6027;&#x9879;&#x76EE;&#x5C06;&#x5728;&#x4E24;&#x4E2A;&#x65B9;&#x5411;&#x4E0A;&#x540C;&#x65F6;&#x6EA2;&#x51FA;&#xFF09;&#x3002;</p>
+</li>
+<li><p>space-between&#xFF1A;
+&#x5F39;&#x6027;&#x9879;&#x76EE;&#x5E73;&#x5747;&#x5206;&#x5E03;&#x5728;&#x8BE5;&#x884C;&#x4E0A;&#x3002;&#x5982;&#x679C;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x4E3A;&#x8D1F;&#x6216;&#x8005;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x9879;&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x7B49;&#x540C;&#x4E8E;flex-start&#x3002;&#x5426;&#x5219;&#xFF0C;&#x7B2C;1&#x4E2A;&#x5F39;&#x6027;&#x9879;&#x7684;&#x5916;&#x8FB9;&#x8DDD;&#x548C;&#x884C;&#x7684;main-start&#x8FB9;&#x7EBF;&#x5BF9;&#x9F50;&#xFF0C;&#x800C;&#x6700;&#x540E;1&#x4E2A;&#x5F39;&#x6027;&#x9879;&#x7684;&#x5916;&#x8FB9;&#x8DDD;&#x548C;&#x884C;&#x7684;main-end&#x8FB9;&#x7EBF;&#x5BF9;&#x9F50;&#xFF0C;&#x7136;&#x540E;&#x5269;&#x4F59;&#x7684;&#x5F39;&#x6027;&#x9879;&#x5206;&#x5E03;&#x5728;&#x8BE5;&#x884C;&#x4E0A;&#xFF0C;&#x76F8;&#x90BB;&#x9879;&#x76EE;&#x7684;&#x95F4;&#x9694;&#x76F8;&#x7B49;&#x3002;</p>
+</li>
+<li><p>space-around&#xFF1A;
+&#x5F39;&#x6027;&#x9879;&#x76EE;&#x5E73;&#x5747;&#x5206;&#x5E03;&#x5728;&#x8BE5;&#x884C;&#x4E0A;&#xFF0C;&#x4E24;&#x8FB9;&#x7559;&#x6709;&#x4E00;&#x534A;&#x7684;&#x95F4;&#x9694;&#x7A7A;&#x95F4;&#x3002;&#x5982;&#x679C;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x4E3A;&#x8D1F;&#x6216;&#x8005;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x9879;&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x7B49;&#x540C;&#x4E8E;center&#x3002;&#x5426;&#x5219;&#xFF0C;&#x5F39;&#x6027;&#x9879;&#x76EE;&#x6CBF;&#x8BE5;&#x884C;&#x5206;&#x5E03;&#xFF0C;&#x4E14;&#x5F7C;&#x6B64;&#x95F4;&#x9694;&#x76F8;&#x7B49;&#xFF08;&#x6BD4;&#x5982;&#x662F;20px&#xFF09;&#xFF0C;&#x540C;&#x65F6;&#x9996;&#x5C3E;&#x4E24;&#x8FB9;&#x548C;&#x5F39;&#x6027;&#x5BB9;&#x5668;&#x4E4B;&#x95F4;&#x7559;&#x6709;&#x4E00;&#x534A;&#x7684;&#x95F4;&#x9694;&#xFF08;1/2*20px=10px&#xFF09;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5404;&#x5C5E;&#x6027;&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="images/css3_01.jpg" alt=""></p>
+<h3 id="104-align-items-&#x5C5E;&#x6027;">10.4 align-items &#x5C5E;&#x6027;</h3>
+<p>align-items &#x8BBE;&#x7F6E;&#x6216;&#x68C0;&#x7D22;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x5728;&#x526F;&#x8F74;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;</p>
+<p><code>align-items: flex-start | flex-end | center | baseline | stretch</code></p>
+<p>&#x5404;&#x4E2A;&#x503C;&#x89E3;&#x6790;:</p>
+<ul>
+<li><p>flex-start&#xFF1A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x4FA7;&#x8F74;&#xFF08;&#x7EB5;&#x8F74;&#xFF09;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x8FB9;&#x754C;&#x7D27;&#x9760;&#x4F4F;&#x8BE5;&#x884C;&#x7684;&#x4FA7;&#x8F74;&#x8D77;&#x59CB;&#x8FB9;&#x754C;&#x3002;</p>
+</li>
+<li><p>flex-end&#xFF1A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x4FA7;&#x8F74;&#xFF08;&#x7EB5;&#x8F74;&#xFF09;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x8FB9;&#x754C;&#x7D27;&#x9760;&#x4F4F;&#x8BE5;&#x884C;&#x7684;&#x4FA7;&#x8F74;&#x7ED3;&#x675F;&#x8FB9;&#x754C;&#x3002;</p>
+</li>
+<li><p>center&#xFF1A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x5728;&#x8BE5;&#x884C;&#x7684;&#x4FA7;&#x8F74;&#xFF08;&#x7EB5;&#x8F74;&#xFF09;&#x4E0A;&#x5C45;&#x4E2D;&#x653E;&#x7F6E;&#x3002;&#xFF08;&#x5982;&#x679C;&#x8BE5;&#x884C;&#x7684;&#x5C3A;&#x5BF8;&#x5C0F;&#x4E8E;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x5219;&#x4F1A;&#x5411;&#x4E24;&#x4E2A;&#x65B9;&#x5411;&#x6EA2;&#x51FA;&#x76F8;&#x540C;&#x7684;&#x957F;&#x5EA6;&#xFF09;&#x3002;</p>
+</li>
+<li><p>baseline&#xFF1A;&#x5982;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x884C;&#x5185;&#x8F74;&#x4E0E;&#x4FA7;&#x8F74;&#x4E3A;&#x540C;&#x4E00;&#x6761;&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x4E0E;&apos;flex-start&apos;&#x7B49;&#x6548;&#x3002;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x503C;&#x5C06;&#x53C2;&#x4E0E;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;&#x3002;</p>
+</li>
+<li><p>stretch&#xFF1A;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4FA7;&#x8F74;&#x5927;&#x5C0F;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E3A;&apos;auto&apos;&#xFF0C;&#x5219;&#x5176;&#x503C;&#x4F1A;&#x4F7F;&#x9879;&#x76EE;&#x7684;&#x8FB9;&#x8DDD;&#x76D2;&#x7684;&#x5C3A;&#x5BF8;&#x5C3D;&#x53EF;&#x80FD;&#x63A5;&#x8FD1;&#x6240;&#x5728;&#x884C;&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x4F1A;&#x9075;&#x7167;&apos;min/max-width/height&apos;&#x5C5E;&#x6027;&#x7684;&#x9650;&#x5236;&#x3002;</p>
+</li>
+</ul>
+<h3 id="105-flex-wrap-&#x5C5E;&#x6027;">10.5 flex-wrap &#x5C5E;&#x6027;</h3>
+<p>flex-wrap &#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x6362;&#x884C;&#x65B9;&#x5F0F;</p>
+<p><code>flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;</code></p>
+<p>&#x5404;&#x4E2A;&#x503C;&#x89E3;&#x6790;:</p>
+<ul>
+<li><p>nowrap - &#x9ED8;&#x8BA4;&#xFF0C; &#x5F39;&#x6027;&#x5BB9;&#x5668;&#x4E3A;&#x5355;&#x884C;&#x3002;&#x8BE5;&#x60C5;&#x51B5;&#x4E0B;&#x5F39;&#x6027;&#x5B50;&#x9879;&#x53EF;&#x80FD;&#x4F1A;&#x6EA2;&#x51FA;&#x5BB9;&#x5668;&#x3002;</p>
+</li>
+<li><p>wrap - &#x5F39;&#x6027;&#x5BB9;&#x5668;&#x4E3A;&#x591A;&#x884C;&#x3002;&#x8BE5;&#x60C5;&#x51B5;&#x4E0B;&#x5F39;&#x6027;&#x5B50;&#x9879;&#x6EA2;&#x51FA;&#x7684;&#x90E8;&#x5206;&#x4F1A;&#x88AB;&#x653E;&#x7F6E;&#x5230;&#x65B0;&#x884C;&#xFF0C;&#x5B50;&#x9879;&#x5185;&#x90E8;&#x4F1A;&#x53D1;&#x751F;&#x65AD;&#x884C;</p>
+</li>
+<li><p>wrap-reverse -&#x53CD;&#x8F6C; wrap &#x6392;&#x5217;&#x3002;</p>
+</li>
+</ul>
+<p>&#x8BBE;&#x7F6E;&#x4E86;wrap&#x540E;&#xFF0C;&#x5B50;&#x5143;&#x7D20;&#x4F1A;&#x6362;&#x884C;&#xFF1A;</p>
+<p><img src="images/css3_02.jpg" alt=""></p>
+<h3 id="106-align-content-&#x5C5E;&#x6027;">10.6 align-content &#x5C5E;&#x6027;</h3>
+<p>align-content &#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x4FEE;&#x6539; flex-wrap &#x5C5E;&#x6027;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x7C7B;&#x4F3C;&#x4E8E; align-items, &#x4F46;&#x5B83;&#x4E0D;&#x662F;&#x8BBE;&#x7F6E;&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x5BF9;&#x9F50;&#xFF0C;&#x800C;&#x662F;&#x8BBE;&#x7F6E;&#x5404;&#x4E2A;&#x884C;&#x7684;&#x5BF9;&#x9F50;</p>
+<p><code>align-content: flex-start | flex-end | center | space-between | space-around | stretch</code></p>
+<ul>
+<li>stretch - &#x9ED8;&#x8BA4;&#x3002;&#x5404;&#x884C;&#x5C06;&#x4F1A;&#x4F38;&#x5C55;&#x4EE5;&#x5360;&#x7528;&#x5269;&#x4F59;&#x7684;&#x7A7A;&#x95F4;&#x3002;</li>
+<li>flex-start - &#x5404;&#x884C;&#x5411;&#x5F39;&#x6027;&#x76D2;&#x5BB9;&#x5668;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x5806;&#x53E0;&#x3002;</li>
+<li>flex-end - &#x5404;&#x884C;&#x5411;&#x5F39;&#x6027;&#x76D2;&#x5BB9;&#x5668;&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x5806;&#x53E0;&#x3002;</li>
+<li>center -&#x5404;&#x884C;&#x5411;&#x5F39;&#x6027;&#x76D2;&#x5BB9;&#x5668;&#x7684;&#x4E2D;&#x95F4;&#x4F4D;&#x7F6E;&#x5806;&#x53E0;&#x3002;</li>
+<li>space-between -&#x5404;&#x884C;&#x5728;&#x5F39;&#x6027;&#x76D2;&#x5BB9;&#x5668;&#x4E2D;&#x5E73;&#x5747;&#x5206;&#x5E03;&#x3002;</li>
+<li>space-around - &#x5404;&#x884C;&#x5728;&#x5F39;&#x6027;&#x76D2;&#x5BB9;&#x5668;&#x4E2D;&#x5E73;&#x5747;&#x5206;&#x5E03;&#xFF0C;&#x4E24;&#x7AEF;&#x4FDD;&#x7559;&#x5B50;&#x5143;&#x7D20;&#x4E0E;&#x5B50;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x95F4;&#x8DDD;&#x5927;&#x5C0F;&#x7684;&#x4E00;&#x534A;&#x3002;</li>
+</ul>
+<h3 id="107-&#x5B8C;&#x7F8E;&#x7684;&#x5C45;&#x4E2D;">10.7 &#x5B8C;&#x7F8E;&#x7684;&#x5C45;&#x4E2D;</h3>
+<p>&#x4F7F;&#x7528;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#xFF0C;&#x5C45;&#x4E2D;&#x53D8;&#x7684;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x60F3;&#x8981;&#x8BBE;&#x7F6E; margin: auto; &#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;&#x5728;&#x4E24;&#x4E0A;&#x8F74;&#x65B9;&#x5411;&#x4E0A;&#x5B8C;&#x5168;&#x5C45;&#x4E2D;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.flex-item</span> {
+    <span class="hljs-attribute">background-color</span>: cornflowerblue;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">75px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">75px</span>;
+    <span class="hljs-attribute">margin</span>: auto;
+}
+</code></pre>
+<h3 id="108-align-self-&#x5C5E;&#x6027;">10.8 align-self &#x5C5E;&#x6027;</h3>
+<p>align-self &#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x5F39;&#x6027;&#x5143;&#x7D20;&#x81EA;&#x8EAB;&#x5728;&#x526F;&#x8F74;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;</p>
+<p><code>align-self: auto | flex-start | flex-end | center | baseline | stretch</code></p>
+<p>&#x5404;&#x4E2A;&#x503C;&#x89E3;&#x6790;:</p>
+<ul>
+<li><p>auto&#xFF1A;&#x5982;&#x679C;&apos;align-self&apos;&#x7684;&#x503C;&#x4E3A;&apos;auto&apos;&#xFF0C;&#x5219;&#x5176;&#x8BA1;&#x7B97;&#x503C;&#x4E3A;&#x5143;&#x7D20;&#x7684;&#x7236;&#x5143;&#x7D20;&#x7684;&apos;align-items&apos;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x5176;&#x6CA1;&#x6709;&#x7236;&#x5143;&#x7D20;&#xFF0C;&#x5219;&#x8BA1;&#x7B97;&#x503C;&#x4E3A;&apos;stretch&apos;&#x3002;</p>
+</li>
+<li><p>flex-start&#xFF1A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x4FA7;&#x8F74;&#xFF08;&#x7EB5;&#x8F74;&#xFF09;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x8FB9;&#x754C;&#x7D27;&#x9760;&#x4F4F;&#x8BE5;&#x884C;&#x7684;&#x4FA7;&#x8F74;&#x8D77;&#x59CB;&#x8FB9;&#x754C;&#x3002;</p>
+</li>
+<li><p>flex-end&#xFF1A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x4FA7;&#x8F74;&#xFF08;&#x7EB5;&#x8F74;&#xFF09;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x7684;&#x8FB9;&#x754C;&#x7D27;&#x9760;&#x4F4F;&#x8BE5;&#x884C;&#x7684;&#x4FA7;&#x8F74;&#x7ED3;&#x675F;&#x8FB9;&#x754C;&#x3002;</p>
+</li>
+<li><p>center&#xFF1A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x5728;&#x8BE5;&#x884C;&#x7684;&#x4FA7;&#x8F74;&#xFF08;&#x7EB5;&#x8F74;&#xFF09;&#x4E0A;&#x5C45;&#x4E2D;&#x653E;&#x7F6E;&#x3002;&#xFF08;&#x5982;&#x679C;&#x8BE5;&#x884C;&#x7684;&#x5C3A;&#x5BF8;&#x5C0F;&#x4E8E;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x5219;&#x4F1A;&#x5411;&#x4E24;&#x4E2A;&#x65B9;&#x5411;&#x6EA2;&#x51FA;&#x76F8;&#x540C;&#x7684;&#x957F;&#x5EA6;&#xFF09;&#x3002;</p>
+</li>
+<li><p>baseline&#xFF1A;&#x5982;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x884C;&#x5185;&#x8F74;&#x4E0E;&#x4FA7;&#x8F74;&#x4E3A;&#x540C;&#x4E00;&#x6761;&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x4E0E;&apos;flex-start&apos;&#x7B49;&#x6548;&#x3002;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x503C;&#x5C06;&#x53C2;&#x4E0E;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;&#x3002;</p>
+</li>
+<li><p>stretch&#xFF1A;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4FA7;&#x8F74;&#x5927;&#x5C0F;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E3A;&apos;auto&apos;&#xFF0C;&#x5219;&#x5176;&#x503C;&#x4F1A;&#x4F7F;&#x9879;&#x76EE;&#x7684;&#x8FB9;&#x8DDD;&#x76D2;&#x7684;&#x5C3A;&#x5BF8;&#x5C3D;&#x53EF;&#x80FD;&#x63A5;&#x8FD1;&#x6240;&#x5728;&#x884C;&#x7684;&#x5C3A;&#x5BF8;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x4F1A;&#x9075;&#x7167;&apos;min/max-width/height&apos;&#x5C5E;&#x6027;&#x7684;&#x9650;&#x5236;&#x3002;</p>
+<p>  <img src="images/css3_03.jpg" alt=""></p>
+</li>
+</ul>
+<h3 id="109-flex-&#x5C5E;&#x6027;">10.9 flex &#x5C5E;&#x6027;</h3>
+<p>flex &#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;&#x5982;&#x4F55;&#x5206;&#x914D;&#x7A7A;&#x95F4;</p>
+<p><code>flex: auto | initial | none | inherit |  [ flex-grow ] || [ flex-shrink ] || [ flex-basis ]</code></p>
+<p>&#x5404;&#x4E2A;&#x503C;&#x89E3;&#x6790;:</p>
+<ul>
+<li>auto: &#x8BA1;&#x7B97;&#x503C;&#x4E3A; 1 1 auto</li>
+<li>initial: &#x8BA1;&#x7B97;&#x503C;&#x4E3A; 0 1 auto</li>
+<li>none&#xFF1A;&#x8BA1;&#x7B97;&#x503C;&#x4E3A; 0 0 auto</li>
+<li>inherit&#xFF1A;&#x4ECE;&#x7236;&#x5143;&#x7D20;&#x7EE7;&#x627F;</li>
+<li>[ flex-grow ]&#xFF1A;&#x5B9A;&#x4E49;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x6269;&#x5C55;&#x6BD4;&#x7387;&#x3002;</li>
+<li>[ flex-shrink ]&#xFF1A;&#x5B9A;&#x4E49;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x6536;&#x7F29;&#x6BD4;&#x7387;&#x3002;</li>
+<li>[ flex-basis ]&#xFF1A;&#x5B9A;&#x4E49;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x9ED8;&#x8BA4;&#x57FA;&#x51C6;&#x503C;&#x3002;</li>
+</ul>
+<p>&#x4EE5;&#x4E0B;&#x5B9E;&#x4F8B;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x5B50;&#x5143;&#x7D20;&#x5360;&#x7528;&#x4E86; 2/4 &#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x5176;&#x4ED6;&#x4E24;&#x4E2A;&#x5404;&#x5360; 1/4 &#x7684;&#x7A7A;&#x95F4;:</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.item1</span> {
+    <span class="hljs-attribute">-webkit-flex</span>: <span class="hljs-number">2</span>;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">2</span>;
+}
+
+<span class="hljs-selector-class">.item2</span> {
+    <span class="hljs-attribute">-webkit-flex</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+}
+
+<span class="hljs-selector-class">.item3</span> {
+    <span class="hljs-attribute">-webkit-flex</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CSS.html" class="navigation navigation-prev " aria-label="Previous page: 第三节-CSS基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="javascript基础整理.html" class="navigation navigation-next " aria-label="Next page: 第五节-Javascript基础">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第四节-CSS3","level":"1.2.4","depth":2,"next":{"title":"第五节-Javascript基础","level":"1.2.5","depth":2,"path":"notes/Javascript-basic-notes/javascript基础整理.md","ref":"notes/Javascript-basic-notes/javascript基础整理.md","articles":[]},"previous":{"title":"第三节-CSS基础","level":"1.2.3","depth":2,"path":"notes/Javascript-basic-notes/CSS.md","ref":"notes/Javascript-basic-notes/CSS.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/Javascript-basic-notes/CSS3.md","mtime":"2017-10-30T00:48:13.593Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-06T06:24:02.110Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

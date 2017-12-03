@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>懒加载实现</title>
+	<!-- <meta name="viewport" content= "width=device-width,user-scalabe=no initial-scale=1.0"> -->
+</head>
+<body>
+<ul>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>1</li>
+	<li>2</li>
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+	<img class="lazyload" data-src="./imgs/01.jpg" >
+</ul>
+<script type="text/javascript">
+	// (function(){
+	// 	let imgList = [],
+	// 	delay,time = 500,
+	// 	offset = 500;
+	// 	function _dealy() { //函数防抖
+	// 		clearTimeout(delay);
+	// 		delay = setTimeout(() => {
+	// 			console.log(imgList.length)
+	// 			loadImg()
+	// 		},time)
+	// 	}
+
+	//    	function loadImg() {
+	// 		imgList.forEach(function(item, index){
+	// 			console.log(item)
+	// 			if(_inSight(item)) {// 判断当前图片位置是否在可是区域内
+	// 				item.src = item.getAttribute('data-src')  //如果在 那么把内置好的data-src赋值给src
+	// 				// imgList.splice(index, 1);//删除已经显示的图片
+	// 			}
+	// 		})
+	// 	}
+
+
+	// 	function _inSight(el) {
+	// 		let coords = el.getBoundingClientRect();
+	// 		return (coords.bottom>=0 && coords.top<(document.documentElement.clientHeight || window.innerHeight) + offset)
+	// 	}
+
+
+	// 	function imgload(selector) {
+	// 		selector = selector || '.lazyload';
+	// 		let nodes = document.querySelectorAll(selector)
+	// 		imgList = Array.apply(null, nodes)
+	// 		window.addEventListener('scroll', _dealy, false)
+	// 	}
+	// 	imgload('.lazyload');
+	// })()
+	(function(){
+		let delay, time = 500,imgList = [],offset = 0;
+		function imgLoad(selector) {
+			selector =  selector || '.lazyload';
+			let nodes = document.querySelectorAll(selector)
+			imgList = Array.apply(null, nodes);
+			//开启页面滚动监听
+			window.addEventListener('scroll',_delay,false)
+		}
+
+		function _delay() {
+			clearTimeout(delay)
+			delay = setTimeout(() => {
+				loadImg();
+			},time)
+		}
+
+		function loadImg() {
+			console.log(imgList)
+			imgList.forEach((item,index) => {
+				console.log(_inSight(item))
+				if(_inSight(item)) {
+
+					item.src = item.getAttribute('data-src');
+					imgList.splice(index, 1)
+				}
+			})
+		}
+
+		function _inSight(el) {
+			let coords = el.getBoundingClientRect();
+			console.log(coords.top)
+			console.log((window.innnerHeight || document.documentElement.clientHeight) + offset)
+			return (coords.bottom >= 0 && coords.top < (window.innnerHeight || document.documentElement.clientHeight) + offset)
+		}
+
+		imgLoad('.lazyload');
+	})()
+</script>
+</body>
+</html>

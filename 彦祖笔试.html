@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    // var str = 'rany is not a good man'
+    // var arr = str.split(' ')
+    // arr.map(function(item, index){
+    // 	return item+(index+5)
+    // })
+    // 
+    // var ul = document.createElement('ul')
+    // for(var i=0;i<100;i++) {
+    // 	var li = createElement('li')
+    // 	ul.appendChild(li)
+    // }
+    // document.body.insertBefore(ul, document.body.firstChild)
+
+    var arr = [1,3,4,5,6,2,3,3,3,2,1];
+    var obj = {};
+    arr.forEach(function(item){
+    	if(obj[item]) {
+    		obj[item] = obj[item] + 1 
+    	}else {
+    		obj[item] = 1
+    	}
+    })
+    var max = 0;
+    var maxItem = null;
+    for( var k in obj) {
+    	
+    	if(max < obj[k]) {
+    		max = obj[k];
+    		maxItem = k 
+    	}
+    }
+    console.log(maxItem +'最大'+max)
+    </script>
+</body>
+
+</html>

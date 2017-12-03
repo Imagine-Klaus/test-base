@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+     <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li> <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li> <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li> <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li> <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+<img class="imgLazyLoad" data-src="./imgs/01.jpg" />
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<body>
+    <script type="text/javascript">
+    (function() { //立即执行函数
+        let imgList = [],
+            delay, time = 250,
+            offset = 0;
+
+        function _delay() { //函数防抖
+            clearTimeout(delay);
+            console.log('进来了')
+            delay = setTimeout(() => {
+                _loadImg();
+            }, time)
+        };
+
+        function _loadImg() { //执行图片加载
+            for (let i = 0; i < imgList.length; i++) {
+                if (_isShow(imgList[i])) {
+                    imgList[i].src = imgList[i].getAttribute('data-src');
+                    imgList.splice(i, 1);
+                }
+            }
+        };
+
+        function _isShow(el) { //判断img是否出现在可视窗口
+            let coords = el.getBoundingClientRect();
+            return (coords.bottom >= 0 && coords.top < (document.documentElement.clientHeight || window.innerHeight) + parseInt(offset))
+        };
+
+        function imgLoad(selector) { //获取所有需要实现懒加载图片对象引用并设置window监听事件scroll
+            selector = selector || '.imgLazyLoad';
+            let nodes = document.querySelectorAll(selector);
+            imgList = Array.apply(null, nodes);
+            window.addEventListener('scroll', _delay, false)
+        };
+
+        imgLoad('.imgLazyLoad')
+    })()
+    </script>
+</body>
+
+</html>
